@@ -137,7 +137,7 @@
             <div id="features " class="features_cont_acc">
               <router-link to="/">
                 <div class="features_item_blue">
-                  <p @click="print()">Your Decks</p>
+                  <p @click="print()">courses</p>
                 </div>
               </router-link>
 
@@ -151,32 +151,6 @@
                 class="accordion accordion-flush"
                 id="accordionFlushExample"
               >
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseOne"
-                    >
-                      <i class="bi bi-plus-circle-fill"></i>Add new deck +
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseOne"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      <div>
-                        <add_deck user="{{user}}"></add_deck>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <a href="/logout"
                   ><div class="features_item_red">
                     <p>Log out</p>
@@ -190,12 +164,6 @@
         <!-- ================ deck box  ============= -->
         <div class="col-md-9" id="deck_list">
           <div class="container" id="deck_box">
-            <center>
-              <p>Your Decks</p>
-
-              <hr />
-            </center>
-
             <!-- <your_decks user="{{user}}"></your_decks> -->
           </div>
         </div>

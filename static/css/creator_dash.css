@@ -104,6 +104,7 @@ a {
   height: 700px;
   margin-top: -5px;
   margin-left: -180px;
+  padding-top: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.199);
@@ -478,4 +479,21 @@ a {
 }
 #search_input i {
   color: rgb(102, 61, 168);
+}
+
+#creator_course_box {
+  background-color: rgb(247, 247, 247);
+  height: 150px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.199);
+}
+
+#creators_course_title {
+  font-size: 50px;
+  font-weight: 300;
+}
+.creators_vid_stats {
+  font-weight: 300;
+  font-size: 100px;
 }
