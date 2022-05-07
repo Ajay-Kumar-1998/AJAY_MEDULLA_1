@@ -19,6 +19,8 @@ def create_app():
     db.init_app(app)
 
     api = Api(app)
+    app.app_context().push()
+
 #     app.config.from_mapping(config)
 #     print("config123",config)
 #     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -45,8 +47,11 @@ def create_app():
 #---------------- returnind app, api----------------
     return  app, api
 
+from application.controllers import *
+
+
 
 
 if __name__ == "__main__":
      app,api=create_app()
-     app.run(debug=True, host="0.0.0.0", port=6000)
+     app.run(debug=True, host="0.0.0.0", port=7000)

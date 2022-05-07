@@ -7,7 +7,7 @@ import requests
 from datetime import datetime
 import sys
 from os import path
-from main import app
+from flask import current_app as app 
 
 
 @app.route("/", methods=["GET"])
