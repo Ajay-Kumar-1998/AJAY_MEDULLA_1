@@ -164,6 +164,85 @@
         <!-- ================ deck box  ============= -->
         <div class="col-md-9" id="deck_list">
           <div class="container" id="deck_box">
+            <div class="row">
+              <div class="col-md-9"></div>
+              <div class="col-md-3">
+                <!-- ===========================================model start======================================================== -->
+
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Create new course
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="staticBackdrop"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">
+                          Course details
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <label for="creator_courses_names"
+                          >Enter the Titles of all the videos in the
+                          course</label
+                        >
+                        <textarea
+                          id="creator_courses_names"
+                          name="creator_courses_names"
+                          rows="4"
+                          cols="50"
+                        ></textarea>
+                        <label for="creator_courses_names"
+                          >Enter the Video Links of all videos in same
+                          order</label
+                        >
+                        <textarea
+                          id="creator_courses_names"
+                          name="creator_courses_names"
+                          rows="4"
+                          cols="50"
+                        ></textarea>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Discard
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Create course
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ===========================================model end======================================================== -->
+              </div>
+            </div>
             <div class="container" id="creator_course_box">
               <div class="row">
                 <div class="col-md-5">
